@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mongo Flask</title>
+</head>
+
+<body>
+    <form action="#" method="post">
+    <p id="form_type"></p>
+    <script> let base = document.baseURI;
+        start = base.lastIndexOf('/') + 1
+        full_string = base[start].toUpperCase() + base.slice(start+1) + ' Tv Show:'; 
+        document.getElementById('form_type').innerHTML = full_string;
+    </script>
+    <table>
+        <tbody>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td>Seasons:</td>
+                <td><input type="text" name="seasons" /></td>
+            </tr>
+            <tr>
+                <td>Duration:</td>
+                <td><input type="text" name="duration" /></td>
+            </tr>
+            <tr>
+                <td>Year:</td>
+                <td><input type="text" name="year" /></td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+    <p><input type="submit" value="Submit"/></p>
+    </form>
+    
+</body>
+</html>
